@@ -1,0 +1,268 @@
+body {
+    background-image: url(../img/header.jpg);
+    background-size: 100%
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.text-color {
+    color: rgb(204, 236, 81);
+}
+
+.text-color2 {
+    color: rgb(57, 225, 236);
+}
+
+.text-color3 {
+    color: rgb(243, 84, 171);
+}
+
+.text-color3:hover {
+    color: rgb(204, 236, 81);
+}
+
+.text-color4 {
+    color: rgb(84, 12, 63);
+    -webkit-text-stroke: 0.4px rgb(32, 8, 42);
+}
+
+.personal-border {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: rgb(214, 149, 179, 0.4);
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.size-border {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.imagen_programador {
+    width: 50%;
+    margin-bottom: -1rem;
+}
+
+.navbar_logo {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.color_menu {
+    color: rgb(31, 8, 42);
+}
+
+.navbar-toggler {
+    padding: 0.35rem .35rem;
+    font-size: 0.25rem;
+    background-image: linear-gradient(to bottom, #ff512f, #dd2476);
+    border: 2px solid rgb(204, 236, 81);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-icon {
+    color: rgb(204, 236, 81);
+}
+
+.nav-color {
+    background-image: linear-gradient(to left, rgba(106, 130, 251, 0.7), rgba(252, 92, 124, 0.7));
+}
+
+.nav-link {
+    color: rgb(31, 8, 42);
+}
+
+.nav-link:hover {
+    color: rgb(243, 84, 171);
+}
+
+.navbar-brand {
+    color: rgb(204, 236, 81);
+}
+
+.bg-navbar {
+    background-image: linear-gradient(to right, #232526, #414345);
+    top: 0;
+}
+
+.border-title {
+    border: 2px solid rgb(204, 236, 81);
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to left, rgb(31, 8, 42), rgb(86, 13, 64));
+    width: 100%;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.border-title::after {
+    position: absolute;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(255, 81, 47), rgb(240, 152, 25));
+    top: 7px;
+    left: 7px;
+    content: '';
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.border-text {
+    border: 2px solid rgb(204, 236, 81);
+    background-image: linear-gradient(to bottom, rgb(31, 8, 42, 0.5), rgb(86, 13, 64, 0.5));
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.personal-border2 {
+    border: 1px solid transparent;
+    background-color: rgb(57, 225, 236, 0.3);
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-personal {
+    background-image: linear-gradient(to bottom, #ff512f, #dd2476);
+    border-radius: 0.5rem;
+    color: rgb(204, 236, 81);
+    border: 2px solid;
+}
+
+.border-title2 {
+    border: 2px solid rgb(57, 225, 236);
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to left, rgb(1, 16, 50), rgb(53, 98, 115));
+    width: 100%;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.border-title2::after {
+    position: absolute;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #1bff00, #fb008b);
+    top: 7px;
+    left: 7px;
+    content: '';
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.border-text2 {
+    border: 2px solid rgb(57, 225, 236);
+    background-image: linear-gradient(to left, rgb(1, 16, 50, 0.5), rgb(53, 98, 115, 0.5));
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.imagen_estudiante {
+    width: 20%;
+    padding-top: 8.5rem;
+    position: absolute;
+    left: -3px;
+}
+
+.imagen_personas {
+    width: 21%;
+    padding-top: 9.5rem;
+    position: absolute;
+    left: 0px;
+}
+
+.rounded-circle {
+    width: 65%;
+}
+
+.filter-grey {
+    filter: grayscale(100%);
+    z-index: 2000;
+}
+
+.filter-grey:hover {
+    filter: none;
+}
+
+.filter-sepia {
+    filter: sepia(100%);
+}
+
+.filter-sepia:hover {
+    filter: none;
+}
+
+.imagen-blanda {
+    width: 50%;
+}
+
+.imagen-tecnica {
+    width: 67%;
+}
+
+.posicion-text {
+    position: static;
+    top: 1%;
+}
+
+@media (min-width: 700px) {
+
+    .out_nav {
+        display: flex;
+        justify-content: end !important;
+    }
+
+    .out_border {
+        border: none !important;
+    }
+
+    .border-title {
+        width: 60%;
+        margin: auto;
+    }
+
+    .border-title2 {
+        width: 60%;
+        margin: auto;
+    }
+
+    .imagen_estudiante {
+        width: 10%;
+        padding-top: 0rem;
+        left: 32.5%;
+        top: 116%;
+    }
+
+    .imagen_personas {
+        width: 10%;
+        padding-top: 0rem;
+        left: 32.5%;
+        top: 145%;
+    }
+
+    .border-text2 {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+}
