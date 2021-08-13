@@ -180,15 +180,17 @@ img {
 .imagen_estudiante {
     width: 20%;
     padding-top: 8.5rem;
-    position: absolute;
-    left: -3px;
+    z-index: 20;
+    margin-right: -13%;
+    margin-left: -8%;
 }
 
 .imagen_personas {
-    width: 21%;
-    padding-top: 9.5rem;
-    position: absolute;
-    left: 0px;
+    width: 20%;
+    padding-top: 9rem;
+    z-index: 20;
+    margin-right: -16%;
+    margin-left: -5%;
 }
 
 .rounded-circle {
@@ -202,6 +204,7 @@ img {
 
 .filter-grey:hover {
     filter: none;
+    transform: scale(105%);
 }
 
 .filter-sepia {
@@ -217,12 +220,16 @@ img {
 }
 
 .imagen-tecnica {
-    width: 67%;
+    width: 67.2%;
 }
 
-.posicion-text {
-    position: static;
-    top: 1%;
+.border-perfil {
+    border: 3px solid rgb(57, 225, 236);
+}
+
+.imagen-proyecto{
+    width: 50%;
+    padding: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -248,16 +255,16 @@ img {
 
     .imagen_estudiante {
         width: 10%;
-        padding-top: 0rem;
-        left: 32.5%;
-        top: 116%;
+        padding-top: 0.0rem;
+        margin-right: -4%;
+        margin-left: 4%;
     }
 
     .imagen_personas {
         width: 10%;
-        padding-top: 0rem;
-        left: 32.5%;
-        top: 145%;
+        padding-top: 0.0rem;
+        margin-right: -4.7%;
+        margin-left: 4%;
     }
 
     .border-text2 {
