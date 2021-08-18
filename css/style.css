@@ -1,31 +1,156 @@
 body {
-    background-image: url(../img/header.jpg);
-    background-size: 100%
+    font-family: 'STIX Two Text', serif;
 }
 
 img {
     width: 100%;
 }
 
-.title {
+/* HEADER */
+
+.fondo {
+    background-image: url(../img/header.jpg);
+    background-size: 300%;
+    background-position: 5% 1%;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: 300% 117%;
+    background-position: 5% 100%;
+}
+
+/* NAVBAR */
+
+.format-name {
+    background: linear-gradient(to right, #15304b, #159957);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Style Script', cursive;
+}
+
+.navbar-toggler {
+    padding: 0.35rem .35rem;
+    font-size: 0.25rem;
+    border: 1px solid white;
     text-align: center;
-    width: 100%;
+    background: linear-gradient(to top, rgba(21, 48, 75, 0.7), rgba(21, 153, 87, 0.7));
+    ;
+    color: white;
 }
 
-.text-color {
-    color: rgb(204, 236, 81);
+.navbar-toggler:hover {
+    color: #15304b;
+    box-shadow: 0px 0px 7px #15304b;
 }
 
-.text-color2 {
-    color: rgb(57, 225, 236);
+.nav-link {
+    color: #15304b;
+}
+
+.nav-link:hover {
+    color: #f05053;
+}
+
+/* JS NAVBAR */
+.bg-navbar {
+    background-image: linear-gradient(to right, #84b6f4, #b0f2c2, #b0f2c2, #b0f2c2);
+    top: 0;
+}
+
+.color-name {
+    background: white;
+    font-size: 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Style Script', cursive;
 }
 
 .text-color3 {
-    color: rgb(243, 84, 171);
+    color: rgb(255, 255, 255);
 }
 
 .text-color3:hover {
-    color: rgb(204, 236, 81);
+    color: #84b6f4;
+}
+
+/* FIN NAVBAR */
+
+
+/* HEADER */
+
+.size-border {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.animation-izq {
+    animation-duration: 1500ms;
+    animation-delay: 0ms;
+    animation-name: move-lr;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@keyframes move-lr {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.title {
+    background: radial-gradient(#15304b, #159957);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.description-text {
+    text-align: justify;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-personal {
+    border-radius: 0.75rem;
+    border: 1px solid white;
+    text-align: center;
+    background: linear-gradient(to bottom, #84b6f4, #f05053);
+    color: white;
+}
+
+.btn:hover {
+    color: #fef102;
+    box-shadow: 0px 0px 7px #fef102;
+}
+
+.animation-der {
+    animation-duration: 1500ms;
+    animation-delay: 0ms;
+    animation-name: move-rl;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@keyframes move-rl {
+    0% {
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .text-color4 {
@@ -33,23 +158,23 @@ img {
     -webkit-text-stroke: 0.4px rgb(32, 8, 42);
 }
 
-.personal-border {
+/* .personal-border {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    background-color: rgb(214, 149, 179, 0.4);
+    background: linear-gradient(to left, rgba(173, 169, 150, 0.6), rgb(242, 242, 242, 0.6), rgb(219, 219, 219, 0.6), rgb(234, 234, 234, 0.6));
     margin-top: 1.75rem;
     margin-bottom: 3rem;
-}
+} */
 
 .size-border {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 1rem;
 }
 
 .imagen_programador {
-    width: 50%;
-    margin-bottom: -1rem;
+    width: 100%;
 }
 
 .navbar_logo {
@@ -65,46 +190,23 @@ img {
     color: rgb(31, 8, 42);
 }
 
-.navbar-toggler {
-    padding: 0.35rem .35rem;
-    font-size: 0.25rem;
-    background-image: linear-gradient(to bottom, #ff512f, #dd2476);
-    border: 2px solid rgb(204, 236, 81);
-}
 
-.navbar-toggler:focus {
-    box-shadow: none;
-}
 
 .navbar-icon {
-    color: rgb(204, 236, 81);
+    color: white
 }
 
-.nav-color {
-    background-image: linear-gradient(to left, rgba(106, 130, 251, 0.7), rgba(252, 92, 124, 0.7));
+.navbar-icon:hover {
+    color: #15304b
 }
 
-.nav-link {
-    color: rgb(31, 8, 42);
-}
 
-.nav-link:hover {
-    color: rgb(243, 84, 171);
-}
 
-.navbar-brand {
-    color: rgb(204, 236, 81);
-}
 
-.bg-navbar {
-    background-image: linear-gradient(to right, #232526, #414345);
-    top: 0;
-}
-
-.border-title {
-    border: 2px solid rgb(204, 236, 81);
+/* .border-title {
+    border: 2px solid rgb(31, 8, 42);
     border-radius: 0.5rem;
-    background-image: linear-gradient(to left, rgb(31, 8, 42), rgb(86, 13, 64));
+    background: linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     width: 100%;
     position: relative;
     padding: 0.5rem;
@@ -121,15 +223,15 @@ img {
     content: '';
     z-index: -1;
     filter: blur(5px);
-}
+} */
 
-.border-text {
+/* .border-text {
     border: 2px solid rgb(204, 236, 81);
     background-image: linear-gradient(to bottom, rgb(31, 8, 42, 0.5), rgb(86, 13, 64, 0.5));
     border-radius: 0.5rem;
     padding: 1rem;
 }
-
+ */
 .personal-border2 {
     border: 1px solid transparent;
     background-color: rgb(57, 225, 236, 0.3);
@@ -138,13 +240,6 @@ img {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-}
-
-.btn-personal {
-    background-image: linear-gradient(to bottom, #ff512f, #dd2476);
-    border-radius: 0.5rem;
-    color: rgb(204, 236, 81);
-    border: 2px solid;
 }
 
 .border-title2 {
@@ -199,7 +294,7 @@ img {
 
 .filter-grey {
     filter: grayscale(100%);
-    z-index: 2000;
+    z-index: 1010;
 }
 
 .filter-grey:hover {
@@ -227,7 +322,7 @@ img {
     border: 3px solid rgb(57, 225, 236);
 }
 
-.imagen-proyecto{
+.imagen-proyecto {
     width: 50%;
     padding: 1rem;
 }
@@ -272,4 +367,19 @@ img {
         margin-left: 10%;
     }
 
+    .fondo {
+        background-size: 100%;
+        background-position: 0% 18%
+    }
+
+    .header {
+        background-image: url(../img/header.jpg);
+        background-size: 100%;
+        background-position: 0% 95%;
+        padding-bottom: 3.75rem;
+    }
+
+    .bg-navbar {
+        background-image: linear-gradient(to right, #84b6f4, #b0f2c2);
+    }
 }
