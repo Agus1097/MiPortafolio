@@ -260,7 +260,7 @@ img {
     font-family: 'Style Script', cursive;
 }
 
-.text-color2:hover{
+.text-color2:hover {
     background: #fef102;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -282,7 +282,6 @@ img {
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: 2px 4px 7px rgba(59, 16, 83, 0.85);
-    ;
 }
 
 .border-text3:hover {
@@ -384,19 +383,34 @@ img {
 }
 
 .wpp {
-    width: 35%;
+    font-size: 120.5%;
+    padding: 0.25rem !important;
 }
 
 .linkedin {
-    width: 35%;
+    font-size: 121%;
+    padding: 0.25rem !important;
 }
 
 .gmail {
-    width: 30%;
+    font-size: 123%;
+    padding: 0.25rem !important;
 }
 
 .github {
-    width: 35%;
+    font-size: 109%;
+    padding: 0.25rem !important;
+}
+
+.maps {
+    font-size: 134%;
+    padding: 0.25rem !important;
+}
+
+.imagen-message {
+    width: 160%;
+    margin-left: -3rem;
+    margin-top: -0.75rem;
 }
 
 .logo-footer {
@@ -494,6 +508,18 @@ img {
     text-align: start;
 }
 
+.items-contact {
+    color: #f7cae4;
+    background: #3c1053;
+    border-radius: 0.25rem !important;
+}
+
+.items-contact:hover{
+    color: #fef102;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 7px #fef102;
+}
+
 
 @media (min-width: 700px) {
 
@@ -570,22 +596,6 @@ img {
 
     .mod-border2 {
         margin-right: auto;
-    }
-
-    .wpp {
-        width: 6%;
-    }
-
-    .linkedin {
-        width: 6%;
-    }
-
-    .gmail {
-        width: 5%;
-    }
-
-    .github {
-        width: 6%;
     }
 
     .ico-spring2 {
@@ -669,7 +679,7 @@ img {
         border-radius: 0.5rem;
         box-shadow: 0px 2px 4px rgba(59, 16, 83, 0.85);
         margin: auto;
-        height: 47.5vh;
+        height: 43.5vh;
     }
 
     .carousel {
@@ -679,6 +689,46 @@ img {
 
     .font-carousel {
         font-size: 100%;
+    }
+
+    .wpp {
+        font-size: 250.5%;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .linkedin {
+        font-size: 250.5%;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .gmail {
+        font-size: 250.5%;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .github {
+        font-size: 211%;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .maps {
+        font-size: 275% !important;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .imagen-message {
+        width: 70%;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .all-contacts{
+        text-align: end;
     }
 
 }
